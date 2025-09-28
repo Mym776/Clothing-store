@@ -91,6 +91,7 @@ input[type="text"]:focus, input[type="password"]:focus {
 }
 
 /* Sign Up button */
+/*
 button {
     padding: 12px;
     background-color: gray;
@@ -107,6 +108,7 @@ button:hover {
     background-color: darkgray;
     transform: translateY(-2px);
 }
+*/
 
 /* Footer */
 .fot {
@@ -121,6 +123,43 @@ button:hover {
 .fot span {
     display: block;
     margin-top: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem
+}
+
+.login-btn {
+    width: 50%;
+}
+
+.signup-btn{
+    width: 50%;
+}
+
+.login-btn, .signup-btn {
+    border: 3px solid #315cfd;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 1.2em;
+    font-weight: 550;
+    border-radius: 45px;
+    height: 140%;
+}
+
+.login-btn:hover, .signup-btn:hover {
+    background: #315cfd;
+    color: white;
+    font-size: 1.5em;
 }
 
 /* Larger screens: tablet/desktop */
