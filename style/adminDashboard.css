@@ -20,6 +20,7 @@ header {
     width: 100%;
 
     padding: 1%;
+    margin-bottom: 2%;
     
     display: flex;
     justify-content: space-between;
@@ -140,7 +141,7 @@ main h1 {
     flex-direction: column;
 
     gap: 1vw;    
-
+    padding: 1vw;
     overflow-y: auto;
     border: lightgrey 2px solid;
 
