@@ -9,17 +9,61 @@
 <body>
     <header>
         <h2>Phantom stitch</h2>
-        <nav>
-            <a href="">Home</a>
-            <a href="">Products</a>
-            <a href="">about</a>
-            <a href="">cart</a>
-            <a href="">user</a>
+        <nav class="naver-link">
+            <a href="index.html">Home </a>
+            <a href="product.html">Products</a>
+            <a href="about.html">About</a>
+            <div id="naver-icon">
+                <i id="cart-icon" class="bi bi-cart"></i>
+                <i id="user-icon"class="bi bi-person-fill"></i>  
+            </div>
         </nav>
     </header>
     <a href="" class="Return_button">&lt;-</a>
     <main>
-        <section class="Product_detail">    
+        
+        <section class="Product_detail">
+            <aside class="sidebar">
+        <h3>All Products</h3>
+        <div class="filter-section">
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <div class="filter-section">
+            <h4>Categories</h4>
+            <label><input type="checkbox"> T-Shirt</label><br>
+            <label><input type="checkbox"> Shirt</label><br>
+            <label><input type="checkbox"> Jackets & Hoodies</label><br>
+            <label><input type="checkbox"> Dress</label><br>
+            <label><input type="checkbox"> Jeans</label><br>
+            <label><input type="checkbox"> Shoes</label><br>
+            <label><input type="checkbox"> Other</label>
+        </div>
+
+        <div class="filter-section">
+            <h4>Filter By</h4>
+            <select>
+                <option>Price</option>
+                <option>$0 - $50</option>
+                <option>$50 - $100</option>
+                <option>$100+</option>
+            </select><br><br>
+
+            <select>
+                <option>Color</option>
+                <option>Black</option>
+                <option>White</option>
+                <option>Red</option>
+            </select><br><br>
+
+            <select>
+                <option>Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+            </select>
+        </div>
+    </aside>
             <div class="Product_description">
             <img src="sample/search.jpg" alt="">
             
@@ -132,7 +176,7 @@
         </section>
     </main>
     <footer>
-        <a href="">contact us</a>
+        <a href="login.html">contact us</a>
         <p>&copf;2025 Phantom Stitch</p>
     </footer>
 </body>

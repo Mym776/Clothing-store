@@ -6,30 +6,43 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between  ;
+    overflow-x: hidden;
+   
 }
 
+.naver-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.naver-link a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+}
+#naver-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+#naver-icon i {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
 header {
-    font-family: 'Inter',Arial, Helvetica, sans-serif;
-    padding: 1%;
-    
-    background-color: white;
-    
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-    font-weight: bold;
+  position: sticky; /* better for usability than absolute */
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: black;
+  z-index: 10;
 }
 header h2 {
-    width: 50%;
-}
-header nav {
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-
-    
+  font-size: 1.2rem;
+  color: white;
 }
 
 .Return_button{
@@ -149,4 +162,40 @@ footer a{
 }
 .Hide_bar::-webkit-scrollbar {
   display: none;
+}
+
+.sidebar {
+  width: 20%; /* full width on mobile */
+  padding: 15px;
+  background: #f8f8f8;
+  color: #000;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+  /* Scrollable sidebar */
+  max-height: 400px;     /* adjust as needed */
+  overflow-y: auto;      /* vertical scroll */
+}
+
+.naver-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.naver-link a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+#naver-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#naver-icon i {
+  font-size: 1.2rem;
+  cursor: pointer;
 }

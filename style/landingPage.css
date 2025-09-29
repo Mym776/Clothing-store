@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    background: #f9f9f9;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -14,30 +14,44 @@ body {
 }
 
 header {
-    font-family: 'Inter',Arial, Helvetica, sans-serif;
-
-
-    width: 100%;
-
-    padding: 1%;
-
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+  position: absolute; 
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  z-index: 10;
+  color: #fff;
 }
 
 header h2{
     width: 50%;
 }
 
-header nav {
-    
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
 
+.naver-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.naver-link a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+#naver-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#naver-icon i {
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 main{
@@ -46,8 +60,8 @@ main{
     display: flex;
     flex-direction: column;
     gap: 4%;
-
 }
+
 .Poster_sec {
     display: flex;
     justify-content: center;
@@ -78,7 +92,8 @@ main{
     position: relative;
     top: 200px;
     padding-left: 20%;
-} 
+}
+
 .Poster button{
     position: relative;
     top: 300px;
@@ -128,4 +143,21 @@ footer {
 }
 footer a{
     color: white;
+}
+
+button {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  background: #444;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-align: center;
+}
+
+button:hover {
+  background: #000;
 }
