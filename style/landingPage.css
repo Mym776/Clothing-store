@@ -31,6 +31,7 @@ header {
   padding: 1rem 1.5rem;
   z-index: 10;
   font-weight: bold;
+  font-family: 'Inter',sans-serif;
 }
 
 .header{
@@ -39,14 +40,14 @@ header {
     top:0;
     left:0;
     position: fixed;
-    background-color: rgb(250, 249, 249);
+    background-color: rgb(255, 255, 255);
     color: rgb(28, 26, 26);
    
 }
 
 header h2{
     width: 50%;
-    font-weight: 1000;
+    font-weight: 700;
 }
 nav{
     display: flex;
@@ -276,7 +277,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 78%;
+    gap: 35%;
     font-family:'Jura',sans-serif;
     font-weight: lighter;
     font-size: smaller;
