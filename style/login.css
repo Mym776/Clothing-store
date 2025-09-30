@@ -13,6 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../sample/blackStore\ 1.svg);
 }
 
 /* Container for the login section */
@@ -46,6 +47,10 @@ body {
     height: auto;
     object-fit: cover;
     margin-top: 15px;
+}
+ 
+.image{
+    display: none;
 }
 
 /* Headings */
@@ -146,7 +151,7 @@ form {
 }
 
 .login-btn, .signup-btn {
-    border: 3px solid #315cfd;
+    border: 3px solid #88540F;
     transition: all 0.3s;
     cursor: pointer;
     background: white;
@@ -157,7 +162,7 @@ form {
 }
 
 .login-btn:hover, .signup-btn:hover {
-    background: #315cfd;
+    background: #88540F;
     color: white;
     font-size: 1.5em;
 }
@@ -171,9 +176,15 @@ form {
     .hold {
         flex-direction: row; /* Side by side sections on desktop */
     }
-
+    body {
+        background-image: none;
+    }
     .sec {
         padding: 30px;
         flex: 1;
     }
+    .image {
+        display: block;
+    }
+   
 }
