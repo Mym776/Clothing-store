@@ -269,7 +269,10 @@ nav{
   .aside{
     display: none;
   }
-
+ .nav-itemi a{
+  text-decoration: none;
+  color: #000;
+ }
 
   }
     
