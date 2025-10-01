@@ -8,13 +8,14 @@ body{
 .signup {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-left: 4%;
     margin-right: 4%;
     padding: 2%;
     gap: 1%;
     border: 2px solid white;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 2em;
 }
 
 .form {
