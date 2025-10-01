@@ -11,7 +11,7 @@ const quantity  = document.querySelector('.quantity')
 
 function product_detail(product){
     pname.textContent = product.name
-    description.textContent = product.details
+    description.textContent = product.description
     image.src = product.image
 
     product.colors.forEach(color=> {
