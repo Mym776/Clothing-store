@@ -33,4 +33,25 @@ product = {
     price:200,
     image: 'sample/shirt.jpg'
 }
+product1 = {
+    name: "undavage",
+    id:100,
+    price:200,
+    image: 'sample/shirt.jpg'
+}
+product2 = {
+    name: "disavage",
+    id:100,
+    price:200,
+    image: 'sample/shirt.jpg'
+}
+product3 = {
+    name: "don't be savage",
+    id:100,
+    price:200,
+    image: 'sample/shirt.jpg'
+}
 tile_factory(product)
+tile_factory(product1)
+tile_factory(product2)
+tile_factory(product3)
