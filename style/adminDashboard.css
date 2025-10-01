@@ -117,8 +117,12 @@ main h1 {
 .Sold_graph {
     flex-grow: 2;
     background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    /* padding-bottom: 26%; */
     
 }
+
 
 .revenue {
     flex-grow: 1;
@@ -220,4 +224,11 @@ footer a{
 .tile {
     border-radius: 1vw;
 
+}
+
+@media (max-width: 1024px){
+  
+    .bar_grapgh{
+      display: none;
+    }
 }
