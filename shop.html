@@ -30,7 +30,72 @@
         </nav>
     </header>
 <main class="main">
-  <h2 class="heading"> ALL products</h2>
+ 
+  <div class="heading">
+     <h2 > ALL PRODUCTS</h2>
+     <img class="icon hide"src="sample/search-i.png"alt="close"onclick=showaside()>
+    
+   <div class="wrap">
+    <div class="searchbar Hide_bar">
+    <img class="icon"src="sample/close.png"alt="close"onclick=hidesearchbar()>
+    <h3>All Products </h3>
+    <div class=""> <input class="i"type="text"placeholder="Search"></div>
+    
+    <div class="f-row">
+      <label for="T-shirt">T-shirt</label>
+      <input id="T-shirt"name="products"type="checkbox"value="T-shirt">
+    </div>
+    <div class="f-row">
+      <label for="shirt">Shirt</label>
+      <input id="shirt"name="products"type="checkbox"value="shirt">
+    </div>
+    <div class="f-row">
+      <label for="Jacket">Jacket and Hoddies</label>
+      <input id="Jacket"name="products"type="checkbox"value="jacket">
+    </div>
+    <div class="f-row">
+      <label for="dress">Dress</label>
+      <input id="dress"name="products"type="checkbox"value="dress">
+    </div>
+    <div class="f-row">
+      <label for="Trousers">Trousers</label>
+      <input id="Trousers"name="products"type="checkbox"value="trousers">
+    </div>
+    <div class="f-row" >
+      <label for="Jeans">Jeans</label>
+      <input id="Jeans"name="products"type="checkbox"value="jeans">
+    </div>
+    <div class="f-row">
+      <label for="Shoe">Shoe</label>
+      <input id="Shoe"name="products"type="checkbox"value="shoe">
+    </div>
+    <div class="f-row">
+      <label for="others">Others</label>
+      <input id="others"name="products"type="checkbox">
+    </div>
+    <h3>Filter by</h3>
+    <div class="f-row" >
+      <label for="Price">Price</label>
+      <select name="price"id="price">
+        <option value="$0-$50">$0-$50</option>
+      </select>
+    </div>
+    <div class="f-row">
+      <label for="size">Size</label>
+      <select name="size"id="size">
+        <option value="$0-$50">$0-$50</option>
+      </select>
+    </div>
+    
+    <div class="f-row">
+      <label for="color">Color</label>
+      <select name="price"id="color">
+        <option value="$0-$50">$0-$50</option>
+      </select>
+    </div>
+    </div>
+    </div>
+  </div>
   <aside class="aside">
      <h3>Browse By </h3>
      <div > <input class="i"type="text"placeholder="Search"></div>
@@ -89,11 +154,13 @@
     </div>
   </aside>
    <div class="products">
+    
       <div class="Product_scroll Hide_bar">
-                <article class="Product_box"> 
-                    <img class="Productimg"src="sample/search.jpg"alt="close">
-                    <span>Product</span>
-                    <span>$250</span>
+                
+               <article class="Product_box"> 
+                <img class="Productimg"src="sample/search.jpg"alt="close">
+                <span>Product</span>
+                <span>$250</span>
                 </article>
                 <article class="Product_box">
                     Products
@@ -201,6 +268,21 @@
    function hidesidebar(){
     const sidebar = document.querySelector('.sidebar')
         sidebar.style.display='none'
+    
+   }
+      function showaside(){
+    const sidebar = document.querySelector('.searchbar')
+        sidebar.style.display='flex '
+         const s = document.querySelector('.heading')
+        s.style.height='50vh'
+        s.style.width='50vh'
+    
+   }
+    function hidesearchbar(){
+    const searchbar = document.querySelector('.searchbar')
+        searchbar.style.display='none'
+    const heading= document.querySelector('.heading')
+    heading.style.height='2%'
     
    }
   </script>

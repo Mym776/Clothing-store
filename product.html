@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="newproduct.css">
-    <script src="script/product.js"></script>
+    <script src="script/product.js" defer></script>
 </head>
 <body>
      <header class="header">
@@ -34,72 +34,24 @@
     <main>
         <a href="" class="Return_button"><img src="sample/back-button.png"alt="backnutton"class="back-btn"></a>
         <section class="Product_detail">
-            <aside class="sidebar">
-        <h3>All Products</h3>
-        <div class="filter-section">
-            <input type="text" placeholder="Search...">
-        </div>
-
-        <div class="filter-section">
-            <h4>Categories</h4>
-            <label><input type="checkbox"> T-Shirt</label><br>
-            <label><input type="checkbox"> Shirt</label><br>
-            <label><input type="checkbox"> Jackets & Hoodies</label><br>
-            <label><input type="checkbox"> Dress</label><br>
-            <label><input type="checkbox"> Jeans</label><br>
-            <label><input type="checkbox"> Shoes</label><br>
-            <label><input type="checkbox"> Other</label>
-        </div>
-
-        <div class="filter-section">
-            <h4>Filter By</h4>
-            <select>
-                <option>Price</option>
-                <option>$0 - $50</option>
-                <option>$50 - $100</option>
-                <option>$100+</option>
-            </select><br><br>
-
-            <select>
-                <option>Color</option>
-                <option>Black</option>
-                <option>White</option>
-                <option>Red</option>
-            </select><br><br>
-
-            <select>
-                <option>Size</option>
-                <option>S</option>
-                <option>M</option>
-                <option>L</option>
-            </select>
-        </div>
-    </aside>
+  
             <div class="Product_description">
-            <img src="sample/search.jpg" alt="">
-            
-            <h3>Description</h3>
-            <p >I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning instructions. This is also a great space to write what makes this product special and how your customers can benefit from this item. Buyers like to know the specifics of what they are buying</p>
+                <img src="sample/search.jpg" alt="" class="Product_image">
+                
+                <h3>Description</h3>
+                <p class="description">I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning instructions. This is also a great space to write what makes this product special and how your customers can benefit from this item. Buyers like to know the specifics of what they are buying</p>
             </div>
             <div class="Product_variants">
-                <h1>T-Shirt</h1>
+                <h1 class="product_name">T-Shirt</h1>
                 <h2>$250</h2>
                 <label for="colors">Color</label>
                 <div class="colors">
-                    <img src="sample/search.jpg" alt="">
-                    <img src="sample/search.jpg" alt="">
-                    <img src="sample/search.jpg" alt="">
-                    <img src="sample/search.jpg" alt="">
-                    <img src="sample/search.jpg" alt="">
-                    <img src="sample/search.jpg" alt="">
-                    <img src="sample/search.jpg" alt="">
-                    <img src="sample/search.jpg" alt="">
-                    <img src="sample/search.jpg" alt="">
+                    
                 </div>
                 <label for="size">Size</label>
                 <select name="" id="size">
                 
-                   <option value="small">Small</option>
+                   
                 </select>
                 <label for="Quantity">Quantity</label>
                 <input type="number"class="num">
